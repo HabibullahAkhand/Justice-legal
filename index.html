@@ -48,7 +48,7 @@
     </style>
 </head>
 
-<body class="lato">
+<body class="lato ">
     <header class="container mx-auto my-20">
         <nav>
             <div class="navbar ">
@@ -247,8 +247,8 @@
                     alteration in some form, by injected humour.</p>
             </div>
             <div class="carousel w-full ">
-                <div id="slide1" class="carousel-item relative w-full h-[calc(100vh-500px)]">
-                    <div class="hero " style="background-image: url(images/slider-1.jpg);">
+                <div id="slide1" class="carousel-item relative w-full ">
+                    <div class="hero bg-cover" style="background-image: url(images/slider-1.jpg);">
                         <div class="hero-overlay sdo"></div>
                         <div class="hero-content text-center text-neutral-content">
                           <div class="  ">
@@ -264,7 +264,7 @@
                     <a href="#slide2" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
-                <div id="slide2" class="carousel-item relative w-full  h-[calc(100vh-500px)]">
+                <div id="slide2" class="carousel-item relative w-full ">
                     <div class="hero " style="background-image: url(images/slider-2.jpg);">
                         <div class="hero-overlay sdo"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -282,7 +282,7 @@
                     <a href="#slide3" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
-                <div id="slide3" class="carousel-item relative w-full h-[calc(100vh-500px)]">
+                <div id="slide3" class="carousel-item relative w-full ">
                     <div class="hero " style="background-image: url(images/slider-3.jpg);">
                         <div class="hero-overlay sdo"></div>
                         <div class="hero-content text-center text-neutral-content">
@@ -309,7 +309,7 @@
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration in some form, by injected humour.</p>
             </div>
-            <div class="flex gap-5">
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
                 <div class="flex-1 space-y-14">
                     <div class="collapse collapse-plus bg-base-200">
                         <input type="radio" name="my-accordion-3" checked="checked" /> 
@@ -339,7 +339,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="flex-1">
+                <div class="flex-1 ">
                     <img src="images/faq.png" alt="">
                 </div>
             </div>
@@ -347,37 +347,46 @@
         </section>
     </main>
 
-    <footer class="bg-black ">
-      <div class="container text-white mx-auto footer py-10 text-base-content">
-        <nav>
-            <header class="footer-title ">Services</header> 
+    <footer class="bg-black px-2 md:px-0">
+      <div class="container text-white mx-auto footer py-20 flex flex-wrap justify-between text-base-content">
+        <nav class="space-y-6"> 
             <div class="flex">
                 <img class="md:w-12 w-4" src="images/Group 1.svg" alt="">
                 <a class="btn btn-ghost md:text-4xl text-sm">Justice</a>
             </div>
+            <div class="max-w-sm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</div>
           </nav> 
-          <nav>
-            <header class="footer-title">Company</header> 
+          <nav class="space-y-6">
+            <header class="footer-title">Usefull Link</header> 
             <a class="link link-hover">About us</a>
             <a class="link link-hover">Contact</a>
             <a class="link link-hover">Jobs</a>
             <a class="link link-hover">Press kit</a>
           </nav> 
-          <nav>
-            <header class="footer-title">Legal</header> 
+          <nav class="space-y-6">
+            <header class="footer-title">Contact Now</header> 
             <a class="link link-hover">Terms of use</a>
             <a class="link link-hover">Privacy policy</a>
             <a class="link link-hover">Cookie policy</a>
           </nav> 
-          <form>
-            <header class="footer-title">Newsletter</header> 
-            <fieldset class="form-control w-80">
-              <label class="label">
-                <span class="label-text">Enter your email address</span>
+          <form class="space-y-6">
+            <header class="footer-title">Subscribe</header> 
+            <fieldset class="space-y-6 form-control w-80">
+              <label class="label mb-6">
+                <span class="">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</span>
               </label> 
               <div class="join">
-                <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
-                <button class="btn btn-primary join-item">Subscribe</button>
+                <input type="text" placeholder="Email Address" class="input input-bordered join-item" /> 
+                <button class="btn bg-[#B68C5A] border-none join-item"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <g clip-path="url(#clip0_12_37)">
+                      <path d="M12.7279 21.2427L4.52197 16.8989C10.4846 13.6228 16.9629 11.3888 23.6775 10.2931C22.5826 17.0078 20.3492 23.4863 17.0738 29.4494L12.7279 21.2427ZM12.7279 21.2427L18.0312 15.9394" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12_37">
+                        <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)"/>
+                      </clipPath>
+                    </defs>
+                  </svg></button>
               </div>
             </fieldset>
           </form>
